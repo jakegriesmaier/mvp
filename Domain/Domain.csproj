@@ -39,14 +39,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\DataAccessLocator.cs" />
+    <Compile Include="DataAccess\ExampleDataAccess\ExampleDataAccessBase.cs" />
+    <Compile Include="DataAccess\ExampleDataAccess\ExampleDataAccessImplementation.cs" />
     <Compile Include="Entities\Example.cs" />
     <Compile Include="Enums\ExampleEnum.cs" />
+    <Compile Include="Exceptions\ContainsNumbersException.cs" />
     <Compile Include="Models\ExampleModel.cs" />
     <Compile Include="Models\Validators\ValueValidator.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataAccess\" />
-    <Folder Include="Exceptions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
